@@ -1,5 +1,10 @@
 package com.ajs;
 
-public @interface override {
+public class override{
+	private void pop() {
+		// TODO Auto-generated method stub
+		 System.out.println("Push...");
+
+	}
 
 }
