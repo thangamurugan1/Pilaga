@@ -21,6 +21,8 @@ public class Kl {
 		WebElement txtpwd = driver.findElement(By.xpath("//input[contains(@name,'pass')]"));
 		txtpwd.sendKeys("Gold");
 		
+		txt.sendKeys("Thangamurugan");
+		
 		WebElement btn = driver.findElement(By.xpath("//button[contains(@name,'login')]"));
 		btn.click();
 		Thread.sleep(3000);
