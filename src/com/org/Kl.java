@@ -19,8 +19,9 @@ public class Kl {
 		WebElement txtusr = driver.findElement(By.xpath("//input[contains(@name,'email')]"));
 		txtusr.sendKeys("Thanga");
 		WebElement txtpwd = driver.findElement(By.xpath("//input[contains(@name,'pass')]"));
-		txtpwd.sendKeys("Gold");
-		
+		txtpwd.sendKeys("thanga");
+		String attribute = txtpwd.getAttribute("value");
+		System.out.println(attribute);
 		WebElement btn = driver.findElement(By.xpath("//button[contains(@name,'login')]"));
 		btn.click();
 		Thread.sleep(3000);
